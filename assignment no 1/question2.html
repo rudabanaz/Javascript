@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 2</title>
+</head>
+<body>
+    <h1>Question no 2</h1>
+    <p> Take two variables and store ages. Then, using if/else conditions, determine the oldest and youngest among them.</p>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+    const age1 = 25;
+    const age2 = 35;
+    let oldest;
+    let youngest;
+    if (age1 > age2) {
+        oldest=age1
+        youngest = age2
+    } else {
+        youngest = age1
+        oldest = age2 
+    }
+    document.getElementById("demo").innerHTML = "oldest is" +oldest;
+    document.getElementById("demo2").innerHTML = "youngest is" +youngest;
+</script>
+    
+</body>
+</html>

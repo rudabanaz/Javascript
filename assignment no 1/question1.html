@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question1</title>
+</head>
+<body>
+    <h1>Question no 1</h1>
+    <p> Create two integer variables length and breadth and assign values. Then check if they represent a square or a rectangle (i.e., if both values are equal, then it's a square; otherwise, it's a rectangle).</p>
+<p id="demo"></p>
+<script>
+    const length = 10;
+    const breadth = 15;
+    let shape;
+    if (length==breadth) {
+        shape = " square";
+    } else {
+        shape = "Rectangle"
+    }
+    document.getElementById("demo").innerHTML = shape;
+
+</script>
+</body>
+</html>

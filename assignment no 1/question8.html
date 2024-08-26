@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 8</title>
+</head>
+<body>
+    <h1>Question no 8</h1>
+    <p> Create a marksheet using operators for at least 5 subjects. 
+        The output should include Student Name, Student Roll Number, Class, Percentage, Grade Obtained, etc. 
+        The percentage should be rounded up to 2 decimal places only. </p>
+
+        <h1><center>MARKSHEET</center></h1>
+        <H3>Student Name : Talal Khan</H3>
+        <h3>Student Roll No : 12345</h3>
+        <h3>Student Classs : 9th</h3>
+        <h4 id="marks1"></h4>
+        <h4 id="marks2"></h4>
+        <h4 id="marks3"></h4>
+        <h4 id="marks4"></h4>
+        <h4 id="marks5"></h4>
+         <h3 id="demo"></h3>
+         <h3 id="demo1"></h3>
+         <h3 id="demo2"></h3>
+
+         <script>
+            let grade;
+            const english = parseFloat(prompt ("Enter Marks For English"));
+            const math = parseFloat( prompt("Enter Marks For Maths"));
+            const chemistry = parseFloat(prompt ("Enter Marks For chemistry"));
+            const urdu = parseFloat(prompt ("Enter Marks For Urdu"));
+            const computer = parseFloat(prompt ("Enter Marks For Computer"));
+            let totalmarks = english + math + chemistry + urdu + computer;
+            let percentage = (totalmarks * 100)/500;
+            if (percentage <= 39){
+                grade = "fail";
+            }
+            else if (percentage >= 40  && percentage <= 49) {
+                grade = " D Grade";
+            }
+            else if( percentage >=50 && percentage <=59){
+                grade =" C Grade";
+            }
+            else if( percentage >=60 && percentage <=69){
+                grade =" B Grade";
+            }
+            else if( percentage >=70 && percentage <=79){
+                grade =" A Grade";
+            }
+            else if( percentage >=80 && percentage <= 100){
+                grade =" A1 Grade";
+            }
+
+            document.getElementById("marks1").innerHTML = "English = " +english;
+            document.getElementById("marks2").innerHTML = "Maths = " + math;
+            document.getElementById("marks3").innerHTML = "Chemistry = " + chemistry;
+            document.getElementById("marks4").innerHTML = "Urdu = " + urdu;
+            document.getElementById("marks5").innerHTML = "Computer = " + computer;
+            document.getElementById("demo").innerHTML = "Total Marks = " + totalmarks;
+            document.getElementById("demo1").innerHTML = "Percentage = " + percentage.toFixed(2) +"%";
+            document.getElementById("demo2").innerHTML = "Grade = " + grade;
+         </script>
+</body>
+</html>

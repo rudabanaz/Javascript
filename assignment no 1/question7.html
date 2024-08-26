@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 7</title>
+</head>
+<body>
+    <h1>Question no 7</h1>
+    <p> 7. Write a program to calculate and print the electricity bill of a given customer. Create variables for customer ID, name, units consumed by the user, bill_amount, and print the total amount the customer needs to pay. The charges are as follows:
+       <br> - Unit Charge/unit
+      <br>  - up to 199: @1.20
+      <br>  - 200 and above but less than 400: @1.50
+       <br> - 400 and above but less than 600: @1.80
+       <br> - 600 and above: @2.00
+        </p>
+        
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+    const customerid ="id12345";
+    const customername = " talal khan";
+    
+    let billamount;
+let unitconsumed = prompt("Enter Consumed Unit");
+if (unitconsumed <= 199) {
+    billamount = unitconsumed * 1.20;
+} else if (unitconsumed >= 200 && unitconsumed <= 400){
+    billamount = unitconsumed * 1.50;
+}
+else if (unitconsumed > 400 && unitconsumed <= 600) {
+    billamount = unitconsumed * 1.80;
+}
+else if (unitconsumed > 600) {
+    billamount = unitconsumed * 2.00;
+}
+document.getElementById("demo").innerHTML = "Customer id = " + customerid;
+document.getElementById("demo1").innerHTML = "Customer Name = "+ customername ;
+document.getElementById("demo2").innerHTML = "unit consumed = "+ unitconsumed;
+document.getElementById("demo3").innerHTML = "Bill Amount is = "+ billamount;
+
+</script>
+</body>
+</html>

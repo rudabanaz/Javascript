@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 3</title>
+</head>
+<body>
+    <h1>Question no 3</h1>
+    <p> 3. A student will not be allowed to sit in an exam if their attendance is less than 75%. Create integer variables and assign values:
+       <br> - Number of classes held = 16
+      <br>  - Number of classes attended = 10  
+     <br>  Print the percentage of classes attended and check if the student is allowed to sit in the exam or not</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+    const classheld = 16;
+    const classattend = 10;
+    let percentage;
+    let status;
+    percentage = (classattend * 100)/classheld;
+    if (percentage >=75) {
+        status = "you are allowed to sit in exam";
+    } else {
+        status = "you are not allowed to sit in exam";
+    }
+    document.getElementById("demo1").innerHTML = status;
+    document.getElementById("demo").innerHTML = "percentage is "+ percentage +"%"; 
+</script>
+</body>
+</html>

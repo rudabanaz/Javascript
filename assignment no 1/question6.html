@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 6</title>
+</head>
+<body>
+    <h1>Question no 6</h1>
+    <p> 6. Write a program to check whether an alphabet is a vowel or consonant.    </p>
+    <p id="demo"></p>
+<script>
+    const alphabet = prompt("Enter the Alphabet")
+    let status;
+    if (alphabet == "a" || alphabet == "e" || alphabet == "i" || alphabet == "o" || alphabet == "u") {
+        status = alphabet + " is a vowel";
+    } else {
+        status = alphabet + " is consonant"
+    }
+    document.getElementById("demo").innerHTML = status;
+</script>
+</body>
+</html>
